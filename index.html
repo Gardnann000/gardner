@@ -1,1512 +1,934 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Little About Me | Anna Gardner</title>
 
-<title>Anna Gardner | Meet Me</title>
-
-<meta name="description"
-content="A little more about Anna Gardner — where I come from, what I love, and the family physician I hope to become.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
 
 <style>
-
 :root {
-  --green: #29483d;
-  --dark-green: #18342b;
-  --sage: #9bad9f;
-  --cream: #f7f4ec;
-  --warm-white: #fffdf8;
-  --gold: #b4955a;
-  --brown: #806d58;
-  --text: #28332f;
-  --muted: #69736e;
-  --light-green: #e7eee9;
-  --line: #dcded7;
+    --green: #294638;
+    --dark-green: #1d3529;
+    --sage: #a7b49e;
+    --cream: #f8f6ef;
+    --white: #fffefa;
+    --gold: #c4a46a;
+    --text: #3b403a;
+    --muted: #777c73;
 }
 
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
-  background: var(--cream);
-  color: var(--text);
-  line-height: 1.7;
+    background: var(--cream);
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    line-height: 1.75;
 }
 
 h1, h2, h3 {
-  font-family: Georgia, "Times New Roman", serif;
-  font-weight: 500;
-  line-height: 1.15;
-}
-
-h2 {
-  font-size: clamp(2.5rem, 5vw, 4.5rem);
-  color: var(--dark-green);
-  margin-bottom: 1.5rem;
-}
-
-h3 {
-  color: var(--green);
-}
-
-p {
-  color: var(--muted);
-  font-size: 1.05rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
-
-.container {
-  width: min(1100px, 90%);
-  margin: auto;
-}
-
-.section {
-  padding: 110px 0;
-  scroll-margin-top: 80px;
-}
-
-.eyebrow {
-  color: var(--gold);
-  text-transform: uppercase;
-  letter-spacing: .18em;
-  font-size: .72rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-}
-
-
-/* =========================
-   NAVIGATION
-========================= */
 
 nav {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 100;
-  background: rgba(247,244,236,.9);
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(41,72,61,.08);
-}
-
-.nav {
-  width: min(1100px,90%);
-  margin: auto;
-  height: 70px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(248,246,239,0.95);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 7%;
+    border-bottom: 1px solid #e7e3d8;
 }
 
 .logo {
-  font-family: Georgia, serif;
-  font-size: 1.2rem;
-  color: var(--dark-green);
-  font-weight: bold;
+    font-family: 'Playfair Display', serif;
+    font-size: 21px;
+    color: var(--green);
 }
 
 .nav-links {
-  display: flex;
-  gap: 1.5rem;
-  list-style: none;
-}
-
-.nav-links a {
-  font-size: .82rem;
-  color: var(--muted);
+    display: flex;
+    gap: 25px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--green);
 }
 
 .nav-links a:hover {
-  color: var(--green);
+    color: var(--gold);
 }
 
-
-/* =========================
-   HERO
-========================= */
-
-.hero {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  padding: 130px 0 90px;
-  background:
-    radial-gradient(circle at 85% 20%, #dfe9e1 0, transparent 30%),
-    var(--cream);
+section {
+    padding: 95px 9%;
 }
 
-.hero-grid {
-  display: grid;
-  grid-template-columns: 1fr .85fr;
-  gap: 80px;
-  align-items: center;
+.section-label {
+    color: #8b987f;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 11px;
+    font-weight: 700;
+    margin-bottom: 15px;
 }
 
-.hero h1 {
-  font-size: clamp(4rem,9vw,7.5rem);
-  color: var(--dark-green);
-  letter-spacing: -.06em;
-  margin-bottom: 1.2rem;
+.section-title {
+    color: var(--green);
+    font-size: clamp(32px, 4vw, 48px);
+    line-height: 1.2;
+    margin-bottom: 25px;
 }
 
-.hero-subtitle {
-  font-family: Georgia, serif;
-  font-size: 1.4rem;
-  color: var(--green);
-  margin-bottom: 1rem;
+.intro {
+    background: var(--green);
+    color: white;
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    padding: 100px 10%;
 }
 
-.hero p {
-  max-width: 650px;
-  margin-bottom: 2rem;
+.intro-content {
+    max-width: 850px;
 }
 
-.hero-image {
-  height: 620px;
-  border-radius: 48% 48% 20px 20px;
-  background:
-    linear-gradient(rgba(41,72,61,.08),rgba(41,72,61,.08)),
-    url("https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1200&q=85")
-    center/cover;
-  box-shadow: 0 25px 60px rgba(35,60,50,.13);
+.intro .eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 12px;
+    color: #d6c39c;
+    margin-bottom: 25px;
 }
 
-.button {
-  display: inline-block;
-  padding: 13px 23px;
-  border-radius: 40px;
-  font-size: .9rem;
-  font-weight: 700;
-  margin-right: .5rem;
+.intro h1 {
+    font-size: clamp(48px, 7vw, 82px);
+    line-height: 1.1;
+    margin-bottom: 25px;
 }
 
-.primary {
-  background: var(--green);
-  color: white;
+.intro h1 span {
+    color: #d4c29e;
+    font-style: italic;
 }
 
-.secondary {
-  border: 1px solid var(--green);
-  color: var(--green);
+.intro p {
+    max-width: 640px;
+    font-size: 17px;
+    color: #e3e9df;
+    margin-bottom: 30px;
 }
 
-.button:hover {
-  transform: translateY(-2px);
+.intro-button {
+    display: inline-block;
+    border: 1px solid #d4c29e;
+    padding: 12px 25px;
+    color: white;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: 0.3s;
 }
 
-
-/* =========================
-   AI DISCLAIMER
-========================= */
-
-.ai-note {
-  max-width: 650px;
-  margin-top: -1rem;
-  margin-bottom: 1.5rem;
-  padding: 12px 16px;
-  border-left: 3px solid var(--gold);
-  background: rgba(255,255,255,.55);
-  border-radius: 0 10px 10px 0;
-  font-size: .78rem;
-  line-height: 1.5;
-  color: var(--muted);
+.intro-button:hover {
+    background: #d4c29e;
+    color: var(--dark-green);
 }
 
-.ai-note strong {
-  color: var(--green);
+.photo-placeholder {
+    background: #e9e6dc;
+    border: 1px dashed #b9b5a8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #89897d;
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding: 20px;
+    min-height: 250px;
+    overflow: hidden;
 }
 
+.photo-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
 
-/* =========================
-   HOMETOWN
-========================= */
+.photo-large {
+    min-height: 430px;
+}
+
+.photo-small {
+    min-height: 210px;
+}
+
+.split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 65px;
+    align-items: center;
+}
+
+.story p {
+    margin-bottom: 18px;
+    color: #60655d;
+}
+
+.highlight {
+    color: var(--green);
+    font-weight: 700;
+}
 
 .hometown {
-  background: white;
+    background: var(--white);
 }
 
-.hometown-grid {
-  display: grid;
-  grid-template-columns: .9fr 1.1fr;
-  gap: 70px;
-  align-items: center;
+.fact-strip {
+    display: flex;
+    gap: 35px;
+    margin-top: 30px;
+    flex-wrap: wrap;
 }
 
-.hometown-image {
-  height: 480px;
-  border-radius: 24px;
-  background:
-    url("https://www.wisconsinhistory.org/WHPD-Images/web/255247.jpg")
-    center/cover;
+.fact {
+    border-left: 2px solid var(--gold);
+    padding-left: 13px;
 }
 
-.hometown-caption {
-  font-size: .72rem;
-  color: var(--muted);
-  margin-top: .7rem;
+.fact strong {
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    color: var(--green);
 }
 
-.hometown-text p {
-  margin-bottom: 1.2rem;
+.fact span {
+    color: var(--muted);
+    font-size: 12px;
 }
-
-.big-quote {
-  border-left: 3px solid var(--gold);
-  padding-left: 25px;
-  margin-top: 2rem;
-}
-
-.big-quote p {
-  font-family: Georgia, serif;
-  color: var(--green);
-  font-size: 1.4rem;
-}
-
-
-/* =========================
-   PROUD OF
-========================= */
 
 .proud {
-  background: var(--light-green);
+    background: #eeeee5;
 }
 
 .proud-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 25px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 45px;
 }
 
-.proud-card {
-  background: white;
-  padding: 38px;
-  border-radius: 22px;
+.card {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 3px;
 }
 
-.proud-card h3 {
-  font-size: 1.7rem;
-  margin-bottom: .8rem;
+.card h3 {
+    color: var(--green);
+    font-size: 25px;
+    margin: 18px 0 12px;
 }
 
-.proud-card p {
-  font-size: .95rem;
+.card p {
+    font-size: 14px;
+    color: #6c7068;
 }
 
-.number {
-  color: var(--gold);
-  font-family: Georgia, serif;
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-
-/* =========================
-   OUTSIDE MEDICINE
-========================= */
-
-.outside {
-  background: white;
+.card .card-number {
+    color: var(--gold);
+    font-size: 12px;
+    letter-spacing: 2px;
 }
 
 .interests {
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  gap: 18px;
+    background: var(--white);
 }
 
-.interest {
-  padding: 30px;
-  min-height: 230px;
-  border-radius: 20px;
-  background: var(--cream);
-  transition: transform .25s;
+.interest-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 40px;
 }
 
-.interest:hover {
-  transform: translateY(-6px);
+.interest-item {
+    background: var(--cream);
+    padding: 28px;
+    border-bottom: 2px solid var(--sage);
 }
 
-.interest-icon {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+.interest-item h3 {
+    font-size: 23px;
+    color: var(--green);
+    margin-bottom: 10px;
 }
 
-.interest h3 {
-  font-size: 1.35rem;
-  margin-bottom: .5rem;
+.interest-item p {
+    color: #6c7068;
+    font-size: 14px;
 }
 
-.interest p {
-  font-size: .9rem;
+.creative {
+    background: #e9ece4;
 }
 
-
-/* =========================
-   BROTHER
-========================= */
-
-.brother {
-  background: var(--green);
-  color: white;
+.creative-block {
+    margin-top: 45px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
 }
 
-.brother-grid {
-  display: grid;
-  grid-template-columns: .9fr 1.1fr;
-  gap: 70px;
-  align-items: center;
+.creative-text h3 {
+    color: var(--green);
+    font-size: 28px;
+    margin-bottom: 15px;
 }
 
-.brother-photo {
-  min-height: 500px;
-  border-radius: 24px;
-  background:
-    linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.1)),
-    url("https://images.unsplash.com/photo-1566577739112-5180d4bf9390?auto=format&fit=crop&w=1000&q=85")
-    center/cover;
+.creative-text p {
+    margin-bottom: 15px;
+    color: #60655d;
 }
 
-.brother h2 {
-  color: white;
+.quote {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    font-style: italic;
+    color: var(--green);
+    border-left: 3px solid var(--gold);
+    padding-left: 25px;
+    margin: 35px 0;
 }
-
-.brother p {
-  color: rgba(255,255,255,.76);
-  margin-bottom: 1.2rem;
-}
-
-
-/* =========================
-   UNUSUAL THINGS
-========================= */
-
-.unusual {
-  background: var(--cream);
-}
-
-.unusual-grid {
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  gap: 20px;
-}
-
-.unusual-card {
-  background: white;
-  padding: 32px;
-  border-radius: 20px;
-  border: 1px solid var(--line);
-}
-
-.unusual-card h3 {
-  font-size: 1.45rem;
-  margin-bottom: .7rem;
-}
-
-.unusual-card p {
-  font-size: .92rem;
-}
-
-
-/* =========================
-   MEDICINE
-========================= */
 
 .medicine {
-  background: white;
+    background: var(--green);
+    color: white;
 }
 
-.medicine-grid {
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  gap: 20px;
+.medicine .section-title {
+    color: white;
 }
 
-.medicine-card {
-  background: var(--cream);
-  padding: 32px;
-  border-radius: 20px;
+.medicine .section-label {
+    color: #d4c29e;
 }
 
-.medicine-card h3 {
-  font-size: 1.4rem;
-  margin-bottom: .7rem;
+.medicine .story p {
+    color: #e1e8df;
 }
 
-.medicine-card p {
-  font-size: .9rem;
+.passion-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-top: 40px;
 }
 
+.passion {
+    border-top: 1px solid #718476;
+    padding-top: 22px;
+}
 
-/* =========================
-   FUTURE
-========================= */
+.passion h3 {
+    color: #e1d0aa;
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+.passion p {
+    color: #e1e8df;
+    font-size: 14px;
+}
 
 .future {
-  background: var(--light-green);
+    background: var(--white);
 }
 
-.future-box {
-  max-width: 850px;
-  margin: auto;
-  text-align: center;
+.future-list {
+    margin-top: 35px;
 }
 
-.future-box p {
-  margin-bottom: 1.3rem;
+.future-item {
+    display: grid;
+    grid-template-columns: 65px 1fr;
+    gap: 20px;
+    padding: 25px 0;
+    border-bottom: 1px solid #e5e3d9;
 }
 
-.future-pill {
-  display: inline-block;
-  padding: 10px 18px;
-  background: white;
-  border-radius: 30px;
-  margin: 5px;
-  font-size: .82rem;
-  color: var(--green);
+.future-item .number {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    color: var(--gold);
 }
 
+.future-item h3 {
+    color: var(--green);
+    font-size: 24px;
+    margin-bottom: 5px;
+}
 
-/* =========================
-   WAKE FOREST
-========================= */
+.future-item p {
+    color: #6c7068;
+    font-size: 14px;
+}
 
 .wake {
-  background:
-    radial-gradient(circle at 10% 80%, #dce8df, transparent 30%),
-    var(--cream);
+    background: #eeeee5;
+    text-align: center;
 }
 
-.wake-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 70px;
-  align-items: center;
+.wake-content {
+    max-width: 760px;
+    margin: auto;
+}
+
+.wake h2 {
+    font-size: clamp(35px, 5vw, 52px);
+    color: var(--green);
+    margin-bottom: 25px;
 }
 
 .wake p {
-  margin-bottom: 1.2rem;
+    color: #62675f;
+    margin-bottom: 20px;
 }
 
-.wake-card {
-  background: var(--green);
-  color: white;
-  padding: 40px;
-  border-radius: 24px;
+.wake .closing {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 23px;
+    color: var(--green);
+    margin-top: 35px;
 }
 
-.wake-card h3 {
-  color: white;
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
+footer {
+    background: var(--dark-green);
+    color: #dce3d9;
+    text-align: center;
+    padding: 35px;
+    font-size: 12px;
+    letter-spacing: 1px;
 }
 
-.wake-card p {
-  color: rgba(255,255,255,.75);
+footer span {
+    color: #d4c29e;
 }
 
-.wake-list {
-  list-style: none;
+@media (max-width: 800px) {
+    .nav-links {
+        display: none;
+    }
+
+    section {
+        padding: 70px 7%;
+    }
+
+    .split,
+    .creative-block {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .proud-grid,
+    .interest-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .passion-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .photo-large {
+        min-height: 300px;
+    }
 }
 
-.wake-list li {
-  padding: 12px 0;
-  border-bottom: 1px solid rgba(255,255,255,.14);
-  color: rgba(255,255,255,.9);
+@media (max-width: 520px) {
+    .proud-grid,
+    .interest-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .intro {
+        min-height: 570px;
+    }
+
+    .intro h1 {
+        font-size: 49px;
+    }
 }
-
-.wake-list li::before {
-  content: "✓";
-  color: #d9c58e;
-  margin-right: 10px;
-}
-
-
-/* =========================
-   FINAL
-========================= */
-
-.final {
-  background: var(--dark-green);
-  text-align: center;
-  padding: 130px 0;
-}
-
-.final h2 {
-  color: white;
-  max-width: 850px;
-  margin: auto auto 1.5rem;
-}
-
-.final p {
-  color: rgba(255,255,255,.75);
-  max-width: 700px;
-  margin: 0 auto 1.2rem;
-}
-
-.signature {
-  font-family: Georgia, serif;
-  color: white;
-  font-size: 1.5rem;
-  margin-top: 3rem;
-}
-
-
-/* =========================
-   ANIMATION
-========================= */
-
-.fade {
-  opacity: 0;
-  transform: translateY(25px);
-  transition: opacity .8s ease, transform .8s ease;
-}
-
-.fade.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-
-/* =========================
-   MOBILE
-========================= */
-
-@media(max-width:850px) {
-
-  .nav-links {
-    display: none;
-  }
-
-  .hero-grid,
-  .hometown-grid,
-  .brother-grid,
-  .wake-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .hero-image {
-    height: 450px;
-  }
-
-  .interests,
-  .medicine-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-
-}
-
-@media(max-width:600px) {
-
-  .section {
-    padding: 80px 0;
-  }
-
-  .hero h1 {
-    font-size: 4.2rem;
-  }
-
-  .interests,
-  .medicine-grid,
-  .proud-grid,
-  .unusual-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .hometown-image,
-  .brother-photo {
-    min-height: 350px;
-  }
-
-}
-
 </style>
 </head>
 
-
 <body>
 
-
-<!-- NAVIGATION -->
-
 <nav>
-  <div class="nav">
-
-    <a href="#top" class="logo">
-      Anna Gardner
-    </a>
-
-    <ul class="nav-links">
-      <li><a href="#about">Where I Grew Up</a></li>
-      <li><a href="#proud">What I'm Proud Of</a></li>
-      <li><a href="#outside">Outside Medicine</a></li>
-      <li><a href="#unusual">A Few Odd Things</a></li>
-      <li><a href="#future">What's Next</a></li>
-      <li><a href="#wake">Wake Forest</a></li>
-    </ul>
-
-  </div>
+    <div class="logo">Anna Gardner</div>
+    <div class="nav-links">
+        <a href="#hometown">My Roots</a>
+        <a href="#proud">My People</a>
+        <a href="#interests">Life Outside Medicine</a>
+        <a href="#medicine">Medicine</a>
+        <a href="#future">What's Next</a>
+    </div>
 </nav>
 
+<!-- INTRODUCTION -->
 
-<!-- HERO -->
-
-<section class="hero" id="top">
-
-  <div class="container hero-grid">
-
-    <div class="fade">
-
-      <div class="eyebrow">
-        A little more about me
-      </div>
-
-      <h1>
-        Hi, I'm<br>
-        Anna.
-      </h1>
-
-      <div class="hero-subtitle">
-        Small-town roots → future family physician
-      </div>
-
-      <p>
-        I'm a fourth-year medical student from a small town in Wisconsin.
-        I love Family Medicine, but there is quite a bit more to me than
-        what fits on an ERAS application.
-      </p>
-
-      <div class="ai-note">
-        <strong>A small disclaimer:</strong> I took an AI in Healthcare
-        course and thought this creative media assignment was a pretty
-        good excuse to try out some of what I was learning. So yes,
-        there is a little AI involved in this website — the opinions,
-        stories, and questionable Packers commentary are still mine.
-      </div>
-
-      <a href="#about" class="button primary">
-        Start here ↓
-      </a>
-
-      <a href="#wake" class="button secondary">
-        Why Wake Forest?
-      </a>
-
-    </div>
-
-    <div class="hero-image fade"></div>
-
-  </div>
-
-</section>
-
-
-<!-- WHERE I GREW UP -->
-
-<section class="section hometown" id="about">
-
-  <div class="container hometown-grid">
-
-    <div class="fade">
-
-      <div class="hometown-image"></div>
-
-      <div class="hometown-caption">
-        Campbellsport, Wisconsin · where I grew up
-      </div>
-
-    </div>
-
-    <div class="hometown-text fade">
-
-      <div class="eyebrow">
-        Where I grew up
-      </div>
-
-      <h2>
-        A little town called Campbellsport.
-      </h2>
-
-      <p>
-        I grew up in Campbellsport, Wisconsin — a small town where
-        people know each other, neighbors help neighbors, and community
-        isn't just something you put on a brochure.
-      </p>
-
-      <p>
-        My parents were an accountant and an electrician, so I grew up
-        around people who worked hard, figured things out, and were
-        pretty practical about life.
-      </p>
-
-      <p>
-        I think that background has influenced the kind of physician
-        I want to become. I like knowing people. I like being useful.
-        And I like the idea of becoming part of a community rather than
-        simply practicing medicine in one.
-      </p>
-
-      <div class="big-quote">
-
+<header class="intro">
+    <div class="intro-content">
+        <div class="eyebrow">A little introduction for Wake Forest</div>
+        <h1>More than just<br> <span>medicine.</span></h1>
         <p>
-          "I think I was drawn to Family Medicine before I even knew
-          what Family Medicine was."
+            Hi! I'm Anna. I'm a future family physician, small-town Wisconsin
+            girl, enthusiastic card player, aspiring skier, wedding officiant,
+            and someone who is almost always planning the next adventure.
+            Here's a little more about the person behind the application.
         </p>
-
-      </div>
-
+        <a class="intro-button" href="#hometown">Get to know me</a>
     </div>
+</header>
 
-  </div>
+<!-- HOMETOWN -->
 
+<section class="hometown" id="hometown">
+    <div class="split">
+        <div class="story">
+            <div class="section-label">01 / Where it all started</div>
+            <h2 class="section-title">A small town, a big village.</h2>
+
+            <p>
+                I grew up in <span class="highlight">Campbellsport, Wisconsin</span>,
+                a small town where community isn't just a word people use.
+                It's something you experience every day.
+            </p>
+
+            <p>
+                I was raised by an accountant and an electrician alongside
+                my little brother. We were lucky to have what I like to call
+                a village around us: family, lifelong friends, and even my
+                grandparents living right next door.
+            </p>
+
+            <p>
+                Growing up this way taught me the value of showing up for
+                people, knowing your neighbors, building relationships,
+                and appreciating the little things. I think a lot of what
+                draws me to family medicine started right there.
+            </p>
+
+            <div class="fact-strip">
+                <div class="fact">
+                    <strong>Campbellsport</strong>
+                    <span>Hometown</span>
+                </div>
+                <div class="fact">
+                    <strong>Wisconsin</strong>
+                    <span>Always home</span>
+                </div>
+                <div class="fact">
+                    <strong>One big village</strong>
+                    <span>My foundation</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="photo-placeholder photo-large">
+            <!-- Replace with hometown/family photo -->
+            HOMETOWN OR FAMILY PHOTO
+        </div>
+    </div>
 </section>
 
+<!-- PEOPLE AND THINGS I'M PROUD OF -->
 
-<!-- WHAT I'M PROUD OF -->
-
-<section class="section proud" id="proud">
-
-  <div class="container">
-
-    <div class="eyebrow">
-      What I'm proud of
-    </div>
-
-    <h2>
-      The things that matter to me.
-    </h2>
+<section class="proud" id="proud">
+    <div class="section-label">02 / A few of my favorite people</div>
+    <h2 class="section-title">Things I'm pretty proud of.</h2>
+    <p>
+        Some of my favorite accomplishments aren't really mine.
+        They're the people I get to cheer for along the way.
+    </p>
 
     <div class="proud-grid">
 
-      <div class="proud-card fade">
+        <div class="card">
+            <div class="card-number">01 / LITTLE BROTHER</div>
+            <div class="photo-placeholder photo-small">
+                BROTHER / FOOTBALL PHOTO
+            </div>
+            <h3>My little brother</h3>
+            <p>
+                He's a senior at UW-Stout and has spent the last four years
+                playing college football. This is his final season, and
+                watching him work toward something he's dedicated so much
+                time to has made me incredibly proud. It's hard to believe
+                my little brother is already a senior!
+            </p>
+        </div>
 
-        <div class="number">01</div>
+        <div class="card">
+            <div class="card-number">02 / BASEBALL FAN</div>
+            <div class="photo-placeholder photo-small">
+                BREWERS / BASEBALL PHOTO
+            </div>
+            <h3>Go Brewers!</h3>
+            <p>
+                I am a pretty enthusiastic Brewers fan, and celebrating
+                a World Series win is something I never thought I'd get
+                to say! Luis Lara, a rookie, has quickly become my favorite
+                player. I love having a team to cheer for and a reason
+                to spend a summer evening at the ballpark.
+            </p>
+        </div>
 
-        <h3>
-          My family
-        </h3>
-
-        <p>
-          I am really proud of the people I come from and the people
-          I get to call family. My parents taught me to work hard,
-          figure things out, and not take myself too seriously. My
-          younger brother has also given me a pretty good reason to
-          become invested in college football.
-        </p>
-
-        <p style="margin-top:15px;">
-          A lot of what I value — showing up for people, working hard,
-          staying curious, and enjoying the people around me — started
-          at home.
-        </p>
-
-      </div>
-
-
-      <div class="proud-card fade">
-
-        <div class="number">02</div>
-
-        <h3>
-          Saying yes to things
-        </h3>
-
-        <p>
-          Some of the experiences I am most proud of started with me
-          saying yes before I was entirely sure how I was going to
-          pull them off.
-        </p>
-
-        <p style="margin-top:15px;">
-          I have coached volleyball, raised money for mission trips,
-          worked as a CNA, helped run projects in healthcare,
-          officiated a wedding, and somehow ended up spending part
-          of medical school working in a bridal shop. I like learning
-          new things and figuring things out as I go.
-        </p>
-
-      </div>
+        <div class="card">
+            <div class="card-number">03 / MY PERSON</div>
+            <div class="photo-placeholder photo-small">
+                HUNTER / COUPLE PHOTO
+            </div>
+            <h3>Hunter</h3>
+            <p>
+                I'm also incredibly proud of my partner, Hunter, who is
+                applying to Neurology residency. Residency applications
+                are quite the adventure when you're both going through
+                Match season together! I'm excited to see where our
+                next chapter takes us.
+            </p>
+        </div>
 
     </div>
-
-  </div>
-
 </section>
 
+<!-- INTERESTS -->
 
-<!-- OUTSIDE MEDICINE -->
+<section class="interests" id="interests">
+    <div class="section-label">03 / Outside the hospital</div>
+    <h2 class="section-title">A few things that make me, me.</h2>
+    <p>
+        I like staying busy, trying new things, and having something
+        to look forward to. A few of my favorite ways to spend a day:
+    </p>
 
-<section class="section outside" id="outside">
+    <div class="interest-grid">
 
-  <div class="container">
+        <div class="interest-item">
+            <h3>Cards & Competition</h3>
+            <p>
+                Cribbage, euchre, and pretty much any opportunity
+                to get a group of people around a table.
+                Friendly competition is encouraged.
+            </p>
+        </div>
 
-    <div class="eyebrow">
-      Outside of school
-    </div>
+        <div class="interest-item">
+            <h3>Outside Time</h3>
+            <p>
+                Neighborhood walks, hiking through Wisconsin state parks,
+                and finding an excuse to spend more time outdoors.
+            </p>
+        </div>
 
-    <h2>
-      The rest of my life.
-    </h2>
+        <div class="interest-item">
+            <h3>Learning New Things</h3>
+            <p>
+                I love a new challenge. Most recently, I've been learning
+                to ski. I'm still working on it, but I think that's
+                part of the fun!
+            </p>
+        </div>
 
-    <div class="interests">
+        <div class="interest-item">
+            <h3>Travel & Adventure</h3>
+            <p>
+                Exploring new places is one of my favorite things.
+                Our next big adventure is a road trip down historic
+                Route 66!
+            </p>
+        </div>
 
-      <div class="interest fade">
+        <div class="interest-item">
+            <h3>Food & Restaurants</h3>
+            <p>
+                Trying new restaurants, finding local favorites,
+                and discovering places worth recommending to friends.
+                I'm always open to suggestions!
+            </p>
+        </div>
 
-        <div class="interest-icon">🏈</div>
-
-        <h3>
-          Packers
-        </h3>
-
-        <p>
-          I grew up in Wisconsin. Obviously, I watch the Packers.
-          Some traditions are non-negotiable.
-        </p>
-
-      </div>
-
-
-      <div class="interest fade">
-
-        <div class="interest-icon">⚾</div>
-
-        <h3>
-          Brewers
-        </h3>
-
-        <p>
-          Baseball games, summer evenings, and an excuse to spend
-          an afternoon outside.
-        </p>
-
-      </div>
-
-
-      <div class="interest fade">
-
-        <div class="interest-icon">🥾</div>
-
-        <h3>
-          Hiking
-        </h3>
-
-        <p>
-          I love being outside, especially when a hike turns into
-          an unnecessarily ambitious adventure.
-        </p>
-
-      </div>
-
-
-      <div class="interest fade">
-
-        <div class="interest-icon">🎲</div>
-
-        <h3>
-          Game nights
-        </h3>
-
-        <p>
-          Catan, cribbage, and euchre are regular contenders.
-          I enjoy games that somehow turn into very serious family
-          competitions.
-        </p>
-
-      </div>
-
-
-      <div class="interest fade">
-
-        <div class="interest-icon">🎹</div>
-
-        <h3>
-          Piano
-        </h3>
-
-        <p>
-          I play piano, mostly because I enjoy having something
-          completely unrelated to medicine that I can sit down and
-          work on.
-        </p>
-
-      </div>
-
-
-      <div class="interest fade">
-
-        <div class="interest-icon">🌷</div>
-
-        <h3>
-          Fresh flowers
-        </h3>
-
-        <p>
-          I am an absolute sucker for fresh flowers. I spent enough
-          time around the bridal world to develop a pretty strong
-          opinion about bouquets, too.
-        </p>
-
-      </div>
-
-
-      <div class="interest fade">
-
-        <div class="interest-icon">🌅</div>
-
-        <h3>
-          Sunsets
-        </h3>
-
-        <p>
-          I will stop what I'm doing to look at a good sunset.
-          Some things are worth being late for.
-        </p>
-
-      </div>
+        <div class="interest-item">
+            <h3>Making Memories</h3>
+            <p>
+                Whether it's a weekend adventure, a family gathering,
+                or an ordinary evening with friends, I love the
+                people and experiences that make life interesting.
+            </p>
+        </div>
 
     </div>
 
-  </div>
-
+    <div class="photo-placeholder photo-large" style="margin-top:35px;">
+        <!-- Replace with travel, hiking, skiing, or friends photos -->
+        ADVENTURES / TRAVEL PHOTO COLLAGE
+    </div>
 </section>
 
+<!-- CREATIVE AND UNUSUAL -->
 
-<!-- BROTHER -->
+<section class="creative">
+    <div class="section-label">04 / Something you might not know</div>
+    <h2 class="section-title">Apparently, I have a few side quests.</h2>
 
-<section class="section brother">
+    <div class="creative-block">
+        <div class="creative-text">
+            <h3>Part-time wedding officiant, part-time matchmaker.</h3>
+            <p>
+                I recently had the honor of "marrying" two of my best
+                friends at their wedding. It was such a fun and meaningful
+                experience that I've signed up to officiate another wedding
+                this spring.
+            </p>
+            <p>
+                The second couple? Two people I actually set up.
+                So, between the matchmaking and officiating, I think
+                it's fair to say I've developed a bit of a wedding hobby.
+            </p>
+            <p>
+                I have also discovered an unexpected talent for wedding
+                dresses. A neighbor I grew up with opened a bridal shop
+                in 2020, and I've had the opportunity to help her pick
+                out dresses and travel to several bridal conferences.
+                It's been a pretty fun experience learning about an
+                entirely different industry!
+            </p>
+        </div>
 
-  <div class="container brother-grid">
-
-    <div class="brother-photo fade"></div>
-
-    <div class="fade">
-
-      <div class="eyebrow">
-        Fall Saturdays
-      </div>
-
-      <h2>
-        I am a very proud big sister.
-      </h2>
-
-      <p>
-        My little brother is a college football player at UW–Stout.
-      </p>
-
-      <p>
-        Watching him play has become one of my favorite parts of fall.
-        It is also a good reminder that the people we care about have
-        their own goals, hard work, wins, losses, and stories.
-      </p>
-
-      <p>
-        So most Saturdays in the fall, I am somewhere watching football,
-        cheering way too loudly, and pretending I know more about
-        football than I actually do.
-      </p>
-
+        <div class="photo-placeholder photo-large">
+            <!-- Replace with wedding/officiating/bridal photo -->
+            WEDDING OR BRIDAL SHOP PHOTO
+        </div>
     </div>
 
-  </div>
-
+    <div class="quote">
+        "I guess I like helping people find their person —
+        whether that's in a clinic, at a wedding, or over a
+        game of euchre."
+    </div>
 </section>
-
-
-<!-- UNUSUAL / CREATIVE -->
-
-<section class="section unusual" id="unusual">
-
-  <div class="container">
-
-    <div class="eyebrow">
-      Things you probably won't find on my CV
-    </div>
-
-    <h2>
-      A few things that make me, me.
-    </h2>
-
-    <div class="unusual-grid">
-
-      <div class="unusual-card fade">
-
-        <h3>
-          I have worked in a bridal shop.
-        </h3>
-
-        <p>
-          Outside of medical school, I have been involved with a bridal
-          shop, which is about as far from a hospital as you can get
-          while still requiring a surprising amount of teamwork,
-          problem-solving, and emotional intelligence.
-        </p>
-
-        <p style="margin-top:15px;">
-          I have loved getting to be part of something creative and
-          helping people through a very memorable — and occasionally
-          stressful — season of life.
-        </p>
-
-      </div>
-
-
-      <div class="unusual-card fade">
-
-        <h3>
-          I officiated a wedding.
-        </h3>
-
-        <p>
-          One of my close friends asked me to officiate her wedding.
-          So, in addition to medical school, I spent part of this year
-          writing a wedding ceremony, telling stories about the couple,
-          and trying not to cry while standing in front of everyone.
-        </p>
-
-      </div>
-
-
-      <div class="unusual-card fade">
-
-        <h3>
-          I raised money for teen mission trips.
-        </h3>
-
-        <p>
-          Through Alive in You, I helped raise about $8,000 to participate
-          in teen mission trips. It taught me a lot about talking to
-          strangers, asking for help, and being willing to put yourself
-          out there for something you believe in.
-        </p>
-
-      </div>
-
-
-      <div class="unusual-card fade">
-
-        <h3>
-          I coached youth volleyball.
-        </h3>
-
-        <p>
-          Coaching has been one of my favorite experiences outside of
-          medicine. I like helping someone figure out what they're
-          capable of, especially when they don't quite believe it yet.
-        </p>
-
-      </div>
-
-
-      <div class="unusual-card fade">
-
-        <h3>
-          I worked at Epic before medical school.
-        </h3>
-
-        <p>
-          Before becoming a medical student, I worked in healthcare
-          technology and administration. I learned that sometimes the
-          best solution to a healthcare problem is not another medication
-          or test — sometimes it is fixing the system around the people
-          providing the care.
-        </p>
-
-      </div>
-
-
-      <div class="unusual-card fade">
-
-        <h3>
-          I like road trips a little too much.
-        </h3>
-
-        <p>
-          Give me a map, a few days, some hiking trails, and a list of
-          small towns and I am happy. I would almost always rather take
-          the scenic route than fly directly there.
-        </p>
-
-      </div>
-
-
-      <div class="unusual-card fade">
-
-        <h3>
-          I really like ordinary life.
-        </h3>
-
-        <p>
-          Some of my favorite things are remarkably unremarkable:
-          walking, cooking, watching sports, working on something around
-          the house, finding a good local restaurant, playing piano,
-          and spending time with family and friends.
-        </p>
-
-        <p style="margin-top:15px;">
-          I think one of the things I am most looking forward to after
-          residency is having a little more room for all of those things.
-        </p>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
 
 <!-- MEDICINE -->
 
-<section class="section medicine">
+<section class="medicine" id="medicine">
+    <div class="section-label">05 / Why family medicine</div>
+    <h2 class="section-title">The parts of medicine that mean the most to me.</h2>
 
-  <div class="container">
+    <div class="story">
+        <p>
+            Family medicine appeals to me because it allows me to build
+            relationships with people through so many different stages
+            of life. I love the idea of being the physician who gets
+            to know a patient, their family, their community, and the
+            things that matter most to them.
+        </p>
 
-    <div class="eyebrow">
-      And then there's medicine
+        <p>
+            Two areas I'm particularly passionate about are caring for
+            teenagers and providing thoughtful end-of-life care.
+            I value the opportunity to support patients during
+            transitions, advocate for them, and make sure they feel
+            heard during some of life's most important moments.
+        </p>
+
+        <p>
+            I also love that family medicine doesn't have to fit into
+            one box. There is always more to learn, new skills to develop,
+            and another way to serve a community.
+        </p>
     </div>
 
-    <h2>
-      The kind of Family Physician I hope to become.
-    </h2>
+    <div class="passion-grid">
 
-    <div class="medicine-grid">
+        <div class="passion">
+            <h3>Adolescents & Teens</h3>
+            <p>
+                I enjoy working with teenagers and helping them navigate
+                a unique stage of life. I want to be someone they feel
+                comfortable talking to, who takes their concerns seriously
+                and helps them feel supported.
+            </p>
+        </div>
 
-      <div class="medicine-card fade">
-
-        <h3>
-          Continuity
-        </h3>
-
-        <p>
-          I want to know my patients over time and understand the
-          context surrounding their health.
-        </p>
-
-      </div>
-
-
-      <div class="medicine-card fade">
-
-        <h3>
-          Breadth
-        </h3>
-
-        <p>
-          I want to graduate residency feeling prepared to care for
-          newborns through older adults and outpatient through inpatient
-          problems.
-        </p>
-
-      </div>
-
-
-      <div class="medicine-card fade">
-
-        <h3>
-          Practical skills
-        </h3>
-
-        <p>
-          I want to become comfortable with procedures, POCUS,
-          musculoskeletal care, urgent care, and acute medicine.
-        </p>
-
-      </div>
-
-
-      <div class="medicine-card fade">
-
-        <h3>
-          Community
-        </h3>
-
-        <p>
-          I want to understand the community where I practice and know
-          the resources available to my patients.
-        </p>
-
-      </div>
-
-
-      <div class="medicine-card fade">
-
-        <h3>
-          Teaching
-        </h3>
-
-        <p>
-          I have enjoyed teaching peers and coaching younger athletes,
-          and I can see teaching becoming an important part of my career.
-        </p>
-
-      </div>
-
-
-      <div class="medicine-card fade">
-
-        <h3>
-          Explore Sports Medicine
-        </h3>
-
-        <p>
-          I have an interest in Sports Medicine and could see myself
-          pursuing fellowship, but I also want residency to expose me
-          to enough different areas of Family Medicine to figure out
-          what direction fits me best.
-        </p>
-
-      </div>
+        <div class="passion">
+            <h3>End-of-Life Care</h3>
+            <p>
+                I am passionate about caring for patients and families
+                through the end of life. I believe there is something
+                incredibly meaningful about helping people maintain
+                dignity, comfort, and autonomy when it matters most.
+            </p>
+        </div>
 
     </div>
-
-  </div>
-
 </section>
 
+<!-- FUTURE -->
 
-<!-- BEYOND RESIDENCY -->
+<section class="future" id="future">
+    <div class="section-label">06 / Looking ahead</div>
+    <h2 class="section-title">What does life after residency look like?</h2>
 
-<section class="section future" id="future">
+    <p>
+        My goal is to become a well-rounded, broad-spectrum family
+        physician. I want to graduate residency feeling prepared
+        to take care of patients across the lifespan and to be useful
+        in whatever community I eventually call home.
+    </p>
 
-  <div class="container future-box">
+    <div class="future-list">
 
-    <div class="eyebrow">
-      Beyond residency
+        <div class="future-item">
+            <div class="number">01</div>
+            <div>
+                <h3>Broad-Spectrum Family Medicine</h3>
+                <p>
+                    I want the skills and confidence to care for newborns
+                    through older adults, manage complex patients, and
+                    provide both outpatient and inpatient care.
+                </p>
+            </div>
+        </div>
+
+        <div class="future-item">
+            <div class="number">02</div>
+            <div>
+                <h3>Procedures & Hands-On Skills</h3>
+                <p>
+                    I hope to develop a strong procedural foundation,
+                    including office-based procedures and point-of-care
+                    ultrasound. I want to be comfortable doing more
+                    than just talking about the problem.
+                </p>
+            </div>
+        </div>
+
+        <div class="future-item">
+            <div class="number">03</div>
+            <div>
+                <h3>Palliative Medicine</h3>
+                <p>
+                    I would love excellent training in palliative care
+                    so I can better support patients and families through
+                    serious illness, difficult decisions, and end-of-life
+                    transitions.
+                </p>
+            </div>
+        </div>
+
+        <div class="future-item">
+            <div class="number">04</div>
+            <div>
+                <h3>Community Involvement</h3>
+                <p>
+                    I hope to be involved in the community outside the
+                    clinic, whether that's volunteering, supporting local
+                    organizations, or even staffing local sporting events.
+                    I love the idea of being a physician people know
+                    beyond their appointments.
+                </p>
+            </div>
+        </div>
+
+        <div class="future-item">
+            <div class="number">05</div>
+            <div>
+                <h3>Life Outside Medicine</h3>
+                <p>
+                    Outside of medicine, I hope to build a family,
+                    continue traveling, and make a home wherever
+                    residency takes us. Hunter has recently become
+                    interested in someday having a donkey and a few goats.
+                    I have a feeling I may be learning a little about
+                    farming in the future, too!
+                </p>
+            </div>
+        </div>
+
     </div>
-
-    <h2>
-      I don't have it all figured out — and I'm okay with that.
-    </h2>
-
-    <p>
-      I can picture myself practicing broad-spectrum Family Medicine
-      in a community where I know my patients and become part of the
-      place where I live.
-    </p>
-
-    <p>
-      I want to leave residency comfortable enough to care for a
-      wide range of patients and problems, with strong procedural and
-      POCUS skills and the confidence to handle both routine and
-      unexpected situations.
-    </p>
-
-    <p>
-      I am also interested in teaching, community involvement, and
-      potentially Sports Medicine. But one of the things I hope residency
-      gives me is enough exposure to discover interests I don't even know
-      I have yet.
-    </p>
-
-    <div style="margin-top:25px;">
-
-      <span class="future-pill">Broad Family Medicine</span>
-      <span class="future-pill">Procedures</span>
-      <span class="future-pill">POCUS</span>
-      <span class="future-pill">Community Medicine</span>
-      <span class="future-pill">Teaching</span>
-      <span class="future-pill">Sports Medicine</span>
-
-    </div>
-
-  </div>
-
 </section>
-
 
 <!-- WAKE FOREST -->
 
-<section class="section wake" id="wake">
+<section class="wake">
+    <div class="wake-content">
+        <div class="section-label">07 / What I'm looking for</div>
 
-  <div class="container wake-grid">
+        <h2>How can Wake Forest help me get there?</h2>
 
-    <div class="fade">
+        <p>
+            I'm looking for a residency that will challenge me,
+            encourage me to explore different areas of family medicine,
+            and help me become a confident, capable physician.
+        </p>
 
-      <div class="eyebrow">
-        What I'm hoping to find at Wake Forest
-      </div>
+        <p>
+            I hope to find mentors who will push me to develop new skills,
+            opportunities to care for patients across the lifespan,
+            meaningful exposure to procedures and palliative medicine,
+            and a program that encourages residents to become involved
+            in the communities they serve.
+        </p>
 
-      <h2>
-        A place where I can build breadth — and still follow my interests.
-      </h2>
+        <p>
+            Just as importantly, I hope to train alongside people who
+            enjoy what they do, support one another, and remember that
+            there is a whole life outside of residency.
+        </p>
 
-      <p>
-        What caught my attention about Wake Forest is that the program
-        seems to strike a balance I am looking for: strong academic
-        training paired with meaningful community-based Family Medicine.
-      </p>
+        <p>
+            I want to leave residency not only prepared to practice
+            broad-spectrum family medicine, but excited about the
+            physician and person I have become along the way.
+        </p>
 
-      <p>
-        I was especially drawn to the amount of community medicine built
-        into the curriculum. The dedicated PGY-1 Community Medicine
-        rotation, experiences with community clinics and the Community
-        Care Center, and opportunities to work with populations through
-        the United Health Center and mobile health initiatives fit closely
-        with how I think about Family Medicine.
-      </p>
-
-      <p>
-        The procedural curriculum also stood out to me. I want to leave
-        residency genuinely comfortable with procedures and POCUS,
-        rather than simply having seen them. Wake's curriculum includes
-        skin biopsies, musculoskeletal injections, ultrasound-guided IVs,
-        paracentesis, lumbar puncture, wound care, and POCUS, which is
-        the kind of hands-on training I am looking for.
-      </p>
-
-      <p>
-        I am also interested in Sports Medicine, and I like that it is
-        incorporated into the residency curriculum with dedicated Sports
-        Medicine rotations and substantial elective time later in training.
-        Having a Primary Care Sports Medicine fellowship within the same
-        system makes that an especially interesting opportunity to explore.
-      </p>
-
-      <p>
-        More broadly, I want a residency that will help me become the kind
-        of physician who can take care of patients across the lifespan,
-        teach others, contribute to a community, and still have room to
-        discover interests I haven't found yet.
-      </p>
-
-      <a
-        href="https://school.wakehealth.edu/education-and-training/residencies-and-fellowships/family-medicine-residency"
-        target="_blank"
-        style="color:var(--green);font-weight:bold;"
-      >
-        Explore Wake Forest Family Medicine →
-      </a>
-
+        <div class="closing">
+            Thank you for taking a little time to get to know me!
+        </div>
     </div>
-
-
-    <div class="wake-card fade">
-
-      <h3>
-        How I hope Wake can help me grow
-      </h3>
-
-      <ul class="wake-list">
-
-        <li>
-          Dedicated PGY-1 Community Medicine rotation
-        </li>
-
-        <li>
-          Community Care Center and FQHC experiences
-        </li>
-
-        <li>
-          Strong procedural and POCUS curriculum
-        </li>
-
-        <li>
-          Sports Medicine rotations during residency
-        </li>
-
-        <li>
-          Substantial elective time to pursue individual interests
-        </li>
-
-        <li>
-          Continuity care across the lifespan
-        </li>
-
-        <li>
-          Opportunities to teach Wake Forest medical students
-        </li>
-
-        <li>
-          Potential pathway toward Sports Medicine fellowship
-        </li>
-
-      </ul>
-
-    </div>
-
-  </div>
-
 </section>
 
-
-<!-- FINAL -->
-
-<section class="final">
-
-  <div class="container">
-
-    <div class="eyebrow">
-      Thanks for getting to know me
-    </div>
-
-    <h2>
-      Hopefully this tells you a little more than my ERAS application can.
-    </h2>
-
-    <p>
-      Residency applications are a strange way to get to know people.
-      There are a lot of accomplishments, experiences, scores, and
-      paragraphs about what we hope to become.
+<footer>
+    <p>ANNA GARDNER &nbsp; | &nbsp; FUTURE FAMILY PHYSICIAN</p>
+    <p style="margin-top:8px;">
+        Made with a little Wisconsin pride and a lot of coffee.
     </p>
-
-    <p>
-      But I think the things that make us who we are are often much
-      simpler: where we grew up, who we are proud of, the people we
-      spend our Saturdays with, the things that make us stop and look
-      around, and what we hope our lives look like when we aren't at work.
-    </p>
-
-    <p>
-      So that's a little bit of me.
-    </p>
-
-    <div class="signature">
-      Anna Gardner
-    </div>
-
-  </div>
-
-</section>
-
-
-<script>
-
-/* Scroll-in animations */
-
-const observer = new IntersectionObserver(
-  (entries) => {
-
-    entries.forEach(entry => {
-
-      if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
-      }
-
-    });
-
-  },
-  { threshold: .12 }
-);
-
-document
-  .querySelectorAll(".fade")
-  .forEach(el => observer.observe(el));
-
-</script>
-
+</footer>
 
 </body>
 </html>
