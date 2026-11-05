@@ -19,14 +19,8 @@
   --ink: #39443b;
   --muted: #626c63;
 }
-
 * { box-sizing: border-box; }
-
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 115px;
-}
-
+html { scroll-behavior: smooth; scroll-padding-top: 115px; }
 body {
   margin: 0;
   background: var(--cream);
@@ -34,39 +28,21 @@ body {
   font-family: "DM Sans", sans-serif;
   line-height: 1.75;
 }
-
 h1, h2, h3 {
   font-family: "Playfair Display", serif;
   font-weight: 500;
   line-height: 1.2;
 }
-
 h2 {
   font-size: clamp(34px,4vw,50px);
   color: var(--green);
   margin: 12px 0 22px;
 }
-
-h3 {
-  color: var(--green);
-  font-size: 24px;
-  margin: 12px 0;
-}
-
+h3 { color: var(--green); font-size: 24px; margin: 12px 0; }
 p { margin: 0 0 17px; }
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-}
-
+a { color: inherit; text-decoration: none; }
+img { display: block; max-width: 100%; }
 section { padding: 78px 8%; }
-
 .label {
   text-transform: uppercase;
   letter-spacing: 2.4px;
@@ -74,15 +50,9 @@ section { padding: 78px 8%; }
   font-weight: 700;
   color: #8d916e;
 }
-
-.intro {
-  max-width: 850px;
-  font-size: 17px;
-  color: var(--muted);
-}
+.intro { max-width: 850px; font-size: 17px; color: var(--muted); }
 
 /* NAVIGATION */
-
 nav {
   position: sticky;
   top: 0;
@@ -96,14 +66,12 @@ nav {
   gap: 18px;
   backdrop-filter: blur(12px);
 }
-
 .logo {
   font-family: "Playfair Display", serif;
   font-size: 22px;
   color: var(--green);
   white-space: nowrap;
 }
-
 .links {
   display: flex;
   gap: 14px;
@@ -111,19 +79,10 @@ nav {
   font-size: 11px;
   color: var(--green);
 }
-
-.links a:hover {
-  text-decoration: underline;
-}
+.links a:hover { text-decoration: underline; }
 
 /* HERO */
-
-.hero {
-  background: var(--green);
-  color: white;
-  padding: 85px 8%;
-}
-
+.hero { background: var(--green); color: white; padding: 85px 8%; }
 .hero-inner {
   max-width: 1200px;
   margin: auto;
@@ -132,21 +91,13 @@ nav {
   align-items: center;
   gap: 65px;
 }
-
 .hero h1 {
   font-size: clamp(55px,7vw,88px);
   margin: 17px 0 22px;
 }
-
 .hero h1 em { color: #e4cfaa; }
 .hero .label { color: #e4cfaa; }
-
-.hero p {
-  font-size: 17px;
-  max-width: 620px;
-  color: #e6ebe5;
-}
-
+.hero p { font-size: 17px; max-width: 620px; color: #e6ebe5; }
 .hero-photo img {
   width: 100%;
   max-width: 370px;
@@ -156,7 +107,6 @@ nav {
   box-shadow: 0 20px 50px rgba(0,0,0,.25);
   border: 5px solid rgba(255,255,255,.12);
 }
-
 .button {
   display: inline-block;
   background: transparent;
@@ -169,21 +119,15 @@ nav {
   text-transform: uppercase;
   border-radius: 3px;
 }
-
-.button:hover {
-  background: #e4cfaa;
-  color: var(--green);
-}
+.button:hover { background: #e4cfaa; color: var(--green); }
 
 /* HOMETOWN */
-
 .split {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 48px;
   align-items: center;
 }
-
 .photo {
   width: 100%;
   height: 420px;
@@ -192,22 +136,14 @@ nav {
 }
 
 /* PROUD OF */
-
 .proud { background: #e9ece4; }
-
 .cards {
   display: grid;
   grid-template-columns: repeat(3,minmax(0,1fr));
   gap: 22px;
   margin-top: 28px;
 }
-
-.card {
-  background: var(--white);
-  padding: 19px;
-  border-radius: 9px;
-}
-
+.card { background: var(--white); padding: 19px; border-radius: 9px; }
 .card-photo {
   height: 275px;
   background: #ebede7;
@@ -217,23 +153,9 @@ nav {
   align-items: center;
   justify-content: center;
 }
-
-.card-photo img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
-.card h3 {
-  font-size: 24px;
-  margin: 17px 0 10px;
-}
-
-.card p {
-  font-size: 14px;
-  color: var(--muted);
-}
-
+.card-photo img { width: 100%; height: 100%; object-fit: contain; }
+.card h3 { font-size: 24px; margin: 17px 0 10px; }
+.card p { font-size: 14px; color: var(--muted); }
 .card .number {
   font-size: 10px;
   letter-spacing: 1.5px;
@@ -242,35 +164,22 @@ nav {
 }
 
 /* INTERESTS */
-
 .interests { background: var(--white); }
-
 .interest-grid {
   display: grid;
   grid-template-columns: repeat(3,1fr);
   gap: 15px;
   margin: 28px 0 36px;
 }
-
 .interest {
   padding: 22px;
   background: var(--cream);
   border-bottom: 2px solid #b0bcae;
 }
-
-.interest h3 {
-  font-size: 22px;
-  margin: 0 0 9px;
-}
-
-.interest p {
-  font-size: 14px;
-  color: var(--muted);
-  margin: 0;
-}
+.interest h3 { font-size: 22px; margin: 0 0 9px; }
+.interest p { font-size: 14px; color: var(--muted); margin: 0; }
 
 /* PHOTO COLLAGE */
-
 .collage {
   display: grid;
   grid-template-columns: repeat(12,minmax(0,1fr));
@@ -278,7 +187,6 @@ nav {
   gap: 12px;
   margin-top: 20px;
 }
-
 .collage figure {
   margin: 0;
   position: relative;
@@ -288,111 +196,50 @@ nav {
   min-width: 0;
   min-height: 0;
 }
-
 .collage img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform .3s ease;
 }
-
-.collage figure:hover img {
-  transform: scale(1.035);
-}
-
+.collage figure:hover img { transform: scale(1.035); }
 .collage figcaption {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   padding: 32px 13px 11px;
-  background: linear-gradient(
-    transparent,
-    rgba(0,0,0,.65)
-  );
+  background: linear-gradient(transparent,rgba(0,0,0,.65));
   color: white;
   font-size: 12px;
 }
-
-/* UPDATED COLLAGE LAYOUT */
-
-.paris {
-  grid-column: 1/6;
-  grid-row: 1/4;
-}
-
-.paris img {
-  object-position: center 48%;
-}
-
-.spain {
-  grid-column: 6/10;
-  grid-row: 1/3;
-}
-
-.ireland {
-  grid-column: 10/13;
-  grid-row: 1/5;
-}
-
-.ireland img {
-  object-position: center 60%;
-}
-
-/* More vertical space for cards and skiing */
-
-.cards-photo {
-  grid-column: 1/6;
-  grid-row: 4/8;
-}
-
-.cards-photo img {
-  object-position: center center;
-}
-
-.skiing {
-  grid-column: 6/10;
-  grid-row: 3/7;
-}
-
-.skiing img {
-  object-position: center center;
-}
-
-.thailand {
-  grid-column: 1/6;
-  grid-row: 8/11;
-}
-
-.italy {
-  grid-column: 6/10;
-  grid-row: 7/11;
-}
-
-.smokies {
-  grid-column: 10/13;
-  grid-row: 5/11;
-}
+.paris { grid-column: 1/6; grid-row: 1/4; }
+.paris img { object-position: center 48%; }
+.spain { grid-column: 6/10; grid-row: 1/3; }
+.ireland { grid-column: 10/13; grid-row: 1/5; }
+.ireland img { object-position: center 60%; }
+.cards-photo { grid-column: 1/6; grid-row: 4/8; }
+.cards-photo img { object-position: center center; }
+.skiing { grid-column: 6/10; grid-row: 3/7; }
+.skiing img { object-position: center center; }
+.thailand { grid-column: 1/6; grid-row: 8/11; }
+.italy { grid-column: 6/10; grid-row: 7/11; }
+.smokies { grid-column: 10/13; grid-row: 5/11; }
 
 /* CREATIVE EXPERIENCES */
-
 .creative { background: #e9ece4; }
-
 .creative-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
   align-items: start;
 }
-
 .creative p { color: var(--muted); }
-
 .wedding-photos {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
 }
-
 .wedding-photos img {
   width: 100%;
   height: 410px;
@@ -401,104 +248,90 @@ nav {
 }
 
 /* FUTURE GOALS */
-
 .future { background: var(--white); }
-
 .vision {
   display: grid;
   grid-template-columns: repeat(2,minmax(0,1fr));
   gap: 17px;
   margin-top: 27px;
 }
-
 .vision-item {
   padding: 25px;
   background: #f1f3ed;
   border-radius: 9px;
   border-top: 3px solid #9aab97;
 }
+.vision-item .symbol { font-size: 27px; color: var(--green); }
+.vision-item p { font-size: 14px; color: var(--muted); }
 
-.vision-item .symbol {
-  font-size: 27px;
-  color: var(--green);
-}
-
-.vision-item p {
-  font-size: 14px;
-  color: var(--muted);
-}
-
-/* LIFE OUTSIDE MEDICINE - FULL WIDTH */
-
+/* FULL-WIDTH LIFE OUTSIDE MEDICINE */
 .vision-item.life {
   grid-column: 1 / -1;
   display: grid;
-  grid-template-columns: 1.3fr 1fr;
+  grid-template-columns: 1fr 1.15fr;
   align-items: center;
-  gap: 30px;
+  gap: 35px;
   padding: 30px;
   background: #e7ede4;
 }
+.life-text h3 { margin-top: 10px; }
+.life-text p { font-size: 16px; max-width: 620px; }
 
-.life-text h3 {
-  margin-top: 10px;
-}
-
-.life-text p {
-  font-size: 16px;
-  max-width: 620px;
-}
-
+/* Donkey photo: full image, no cropping */
 .donkey-photo {
+  display: block;
   width: 100%;
-  height: 260px;
-  object-fit: cover;
-  object-position: center;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
   border-radius: 8px;
 }
 
 /* WHY WAKE FOREST */
-
-.wake {
-  background: #e9ece4;
-}
-
+.wake { background: #e9ece4; }
 .wake-intro {
   max-width: 900px;
   font-size: 17px;
   color: var(--muted);
   margin-bottom: 32px;
 }
-
 .wake-grid {
   display: grid;
   grid-template-columns: repeat(2,minmax(0,1fr));
   gap: 20px;
 }
-
 .wake-card {
   background: var(--white);
   border-radius: 9px;
   padding: 27px;
   border-top: 3px solid var(--gold);
 }
-
 .wake-card .number {
   color: #9b835c;
   font-size: 11px;
   letter-spacing: 1.8px;
   font-weight: 700;
 }
+.wake-card h3 { margin: 12px 0 18px; }
 
-.wake-card h3 {
-  margin: 12px 0;
+/* Concise bullet formatting */
+.wake-card ul,
+.wake-personal ul {
+  padding-left: 20px;
+  margin: 0;
 }
-
-.wake-card p {
+.wake-card li {
   color: var(--muted);
   font-size: 15px;
+  line-height: 1.65;
+  padding-left: 3px;
+  margin-bottom: 12px;
+}
+.wake-card li:last-child,
+.wake-personal li:last-child {
   margin-bottom: 0;
 }
+.wake-card li::marker { color: #9b835c; }
 
 .wake-personal {
   margin-top: 25px;
@@ -507,20 +340,18 @@ nav {
   border-radius: 10px;
   color: white;
 }
-
 .wake-personal h3 {
   color: #e4cfaa;
   font-size: 29px;
+  margin-bottom: 20px;
 }
-
-.wake-personal p {
+.wake-personal li {
   color: #e6ebe5;
-  max-width: 1000px;
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 12px;
 }
-
-.wake-personal p:last-child {
-  margin-bottom: 0;
-}
+.wake-personal li::marker { color: #e4cfaa; }
 
 .closing {
   font-family: "Playfair Display", serif;
@@ -532,7 +363,6 @@ nav {
 }
 
 /* FOOTER */
-
 footer {
   background: var(--dark);
   color: #e0e7dd;
@@ -543,25 +373,14 @@ footer {
 }
 
 /* RESPONSIVE */
-
 @media(max-width:1050px) {
-  nav {
-    flex-direction: column;
-  }
-
-  .links {
-    justify-content: center;
-  }
-
-  .hero-inner {
-    gap: 35px;
-  }
+  nav { flex-direction: column; }
+  .links { justify-content: center; }
+  .hero-inner { gap: 35px; }
 }
 
 @media(max-width:800px) {
-  section {
-    padding: 65px 6%;
-  }
+  section { padding: 65px 6%; }
 
   .hero-inner,
   .split,
@@ -573,10 +392,7 @@ footer {
     display: flex;
     justify-content: center;
   }
-
-  .hero-photo img {
-    max-width: 310px;
-  }
+  .hero-photo img { max-width: 310px; }
 
   .cards,
   .interest-grid,
@@ -588,34 +404,20 @@ footer {
     grid-template-columns: repeat(2,1fr);
     grid-auto-rows: 210px;
   }
-
   .collage figure {
     grid-column: auto !important;
     grid-row: auto !important;
   }
-
   .collage .paris,
   .collage .ireland,
   .collage .thailand {
     grid-column: span 2 !important;
   }
-
-  .collage .ireland {
-    height: 360px;
-  }
-
-  .collage .paris {
-    height: 300px;
-  }
-
-  .collage .thailand {
-    height: 260px;
-  }
-
+  .collage .ireland { height: 360px; }
+  .collage .paris { height: 300px; }
+  .collage .thailand { height: 260px; }
   .collage .cards-photo,
-  .collage .skiing {
-    height: 320px;
-  }
+  .collage .skiing { height: 320px; }
 }
 
 @media(max-width:550px) {
@@ -623,10 +425,7 @@ footer {
     text-align: center;
     padding: 65px 7%;
   }
-
-  .hero h1 {
-    font-size: 55px;
-  }
+  .hero h1 { font-size: 55px; }
 
   .cards,
   .interest-grid,
@@ -639,56 +438,30 @@ footer {
     grid-template-columns: 1fr;
     padding: 24px;
   }
-
   .donkey-photo {
+    width: 100%;
     height: auto;
-    max-height: 350px;
-    object-fit: contain;
+    max-height: none;
   }
 
   .collage {
     grid-auto-rows: 155px;
     gap: 8px;
   }
-
-  .collage .ireland {
-    height: 320px;
-  }
-
-  .collage .paris {
-    height: 265px;
-  }
-
+  .collage .ireland { height: 320px; }
+  .collage .paris { height: 265px; }
   .collage .cards-photo,
-  .collage .skiing {
-    height: 260px;
-  }
+  .collage .skiing { height: 260px; }
 
-  .wedding-photos img {
-    height: 260px;
-  }
-
-  .photo {
-    height: 300px;
-  }
-
-  .card-photo {
-    height: 300px;
-  }
-
-  .wake-personal {
-    padding: 25px;
-  }
+  .wedding-photos img { height: 260px; }
+  .photo { height: 300px; }
+  .card-photo { height: 300px; }
+  .wake-personal { padding: 25px; }
 }
 
 @media(prefers-reduced-motion:reduce) {
-  html {
-    scroll-behavior: auto;
-  }
-
-  .collage img {
-    transition: none;
-  }
+  html { scroll-behavior: auto; }
+  .collage img { transition: none; }
 }
 </style>
 </head>
@@ -698,9 +471,7 @@ footer {
 <!-- NAVIGATION -->
 
 <nav aria-label="Main navigation">
-
   <div class="logo">Anna Gardner</div>
-
   <div class="links">
     <a href="#who">Where I Grew Up</a>
     <a href="#proud">What I'm Proud Of</a>
@@ -709,19 +480,14 @@ footer {
     <a href="#future">Beyond Residency</a>
     <a href="#wake">Why Wake Forest</a>
   </div>
-
 </nav>
 
 <!-- INTRODUCTION -->
 
 <header class="hero">
-
   <div class="hero-inner">
-
     <div>
-
       <div class="label">A little about me</div>
-
       <h1>Hi, <em>I'm Anna!</em></h1>
 
       <p>
@@ -738,7 +504,6 @@ footer {
       <a class="button" href="#who">
         Get to know me
       </a>
-
     </div>
 
     <div class="hero-photo">
@@ -747,19 +512,14 @@ footer {
         alt="Anna Gardner headshot"
       >
     </div>
-
   </div>
-
 </header>
 
 <!-- WHERE I GREW UP -->
 
 <section id="who">
-
   <div class="split">
-
     <div>
-
       <div class="label">
         01 / Where did I grow up?
       </div>
@@ -798,7 +558,6 @@ footer {
         to family medicine started with
         my hometown and my village.
       </p>
-
     </div>
 
     <img
@@ -807,15 +566,12 @@ footer {
       alt="Campbellsport Wisconsin water tower"
       loading="lazy"
     >
-
   </div>
-
 </section>
 
 <!-- WHAT I'M PROUD OF -->
 
 <section class="proud" id="proud">
-
   <div class="label">
     02 / What am I proud of?
   </div>
@@ -830,10 +586,7 @@ footer {
 
   <div class="cards">
 
-    <!-- JOSEPH -->
-
     <article class="card">
-
       <div class="number">01 / LITTLE BROTHER</div>
 
       <div class="card-photo">
@@ -860,13 +613,9 @@ footer {
         It's hard to believe my little
         brother is already a senior!
       </p>
-
     </article>
 
-    <!-- BREWERS -->
-
     <article class="card">
-
       <div class="number">02 / SPORTS FAN</div>
 
       <div class="card-photo">
@@ -887,13 +636,9 @@ footer {
         some of his incredible catches
         from this season!
       </p>
-
     </article>
 
-    <!-- HUNTER -->
-
     <article class="card">
-
       <div class="number">03 / MY PERSON</div>
 
       <div class="card-photo">
@@ -926,17 +671,14 @@ footer {
         I'm excited to see where our
         next chapter takes us.
       </p>
-
     </article>
 
   </div>
-
 </section>
 
 <!-- INTERESTS OUTSIDE SCHOOL -->
 
 <section class="interests" id="joy">
-
   <div class="label">
     03 / What brings me joy?
   </div>
@@ -951,76 +693,58 @@ footer {
   <div class="interest-grid">
 
     <div class="interest">
-
       <h3>Playing Cards</h3>
-
       <p>
         Cribbage and euchre are favorites!
         I'm looking forward to bringing
         these Midwest games to the South.
         Friendly competition encouraged.
       </p>
-
     </div>
 
     <div class="interest">
-
       <h3>Being Outside</h3>
-
       <p>
         Neighborhood walks, hiking through
         state parks, and any excuse to
         spend more time outdoors.
       </p>
-
     </div>
 
     <div class="interest">
-
       <h3>Sports</h3>
-
       <p>
         I love playing and coaching volleyball.
         Recently, I learned to downhill ski.
         I'm still working on it, but that's
         part of the fun!
       </p>
-
     </div>
 
     <div class="interest">
-
       <h3>Travel &amp; Adventure</h3>
-
       <p>
         Exploring new places is one of my
         favorite things. Our next adventure
         is a road trip down historic Route 66!
       </p>
-
     </div>
 
     <div class="interest">
-
       <h3>Food &amp; Restaurants</h3>
-
       <p>
         Trying new restaurants and finding
         local favorites is one of my favorite
         ways to explore a new city.
       </p>
-
     </div>
 
     <div class="interest">
-
       <h3>Always Room for Dessert</h3>
-
       <p>
         I'll never turn down a sweet treat,
         especially cookies and cream ice cream!
       </p>
-
     </div>
 
   </div>
@@ -1104,13 +828,11 @@ footer {
     </figure>
 
   </div>
-
 </section>
 
 <!-- CREATIVE AND UNUSUAL EXPERIENCES -->
 
 <section class="creative" id="creative">
-
   <div class="label">
     04 / What else should you know?
   </div>
@@ -1118,9 +840,7 @@ footer {
   <h2>Apparently, I have a few side gigs.</h2>
 
   <div class="creative-grid">
-
     <div>
-
       <h3>
         Professional matchmaker and
         part-time wedding officiant?
@@ -1163,33 +883,26 @@ footer {
         It's been fun learning about an
         entirely different industry!
       </p>
-
     </div>
 
     <div class="wedding-photos">
-
       <img
         src="wedding officiant.JPEG"
         alt="Anna officiating a wedding"
         loading="lazy"
       >
-
       <img
         src="wedding dress.jpg"
         alt="Wedding dresses at a bridal market"
         loading="lazy"
       >
-
     </div>
-
   </div>
-
 </section>
 
 <!-- GOALS AFTER RESIDENCY -->
 
 <section class="future" id="future">
-
   <div class="label">
     05 / What does my future look like?
   </div>
@@ -1198,14 +911,9 @@ footer {
 
   <div class="vision">
 
-    <!-- BROAD SPECTRUM -->
-
     <div class="vision-item">
-
       <div class="symbol">✚</div>
-
       <h3>Broad-Spectrum Family Medicine</h3>
-
       <p>
         I want the skills to care for
         newborns through older adults,
@@ -1213,52 +921,33 @@ footer {
         feel comfortable in both the
         outpatient and inpatient settings.
       </p>
-
     </div>
 
-    <!-- PROCEDURES -->
-
     <div class="vision-item">
-
       <div class="symbol">✧</div>
-
       <h3>Procedures &amp; Hands-On Skills</h3>
-
       <p>
-        I'd love to become more confident
+        I want to continue growing my skills
         with office procedures and
         point-of-care ultrasound.
       </p>
-
     </div>
 
-    <!-- PALLIATIVE -->
-
     <div class="vision-item">
-
       <div class="symbol">♡</div>
-
       <h3>Palliative &amp; End-of-Life Care</h3>
-
       <p>
         End-of-life care has a special place
         in my heart. I hope to continue
         growing my skills in caring for
-        patients with serious illness
-        and helping families navigate
-        some of life's hardest moments.
+        patients and families during
+        these important moments.
       </p>
-
     </div>
 
-    <!-- COMMUNITY -->
-
     <div class="vision-item">
-
       <div class="symbol">★</div>
-
       <h3>Part of the Community</h3>
-
       <p>
         I'd love to stay involved outside
         the clinic, whether that's
@@ -1266,15 +955,13 @@ footer {
         organizations, coaching, or
         staffing sporting events.
       </p>
-
     </div>
 
-    <!-- LIFE OUTSIDE MEDICINE -->
+    <!-- FULL-WIDTH LIFE OUTSIDE MEDICINE -->
 
     <div class="vision-item life">
 
       <div class="life-text">
-
         <div class="symbol">⌂</div>
 
         <h3>A Life Outside Medicine</h3>
@@ -1286,12 +973,12 @@ footer {
         </p>
 
         <p>
-          Hunter has recently become
-          interested in someday having
-          a donkey and a few goats.
-          We'll see how that goes!
+          Hunter has recently become interested
+          in someday having a donkey and a
+          few goats. We'll see how that goes!
+          I guess I'll probably need to learn
+          a little about farming!
         </p>
-
       </div>
 
       <img
@@ -1304,7 +991,6 @@ footer {
     </div>
 
   </div>
-
 </section>
 
 <!-- WHY WAKE FOREST -->
@@ -1329,127 +1015,111 @@ footer {
     <!-- TRAINING AND ELECTIVES -->
 
     <div class="wake-card">
-
-      <div class="number">01 / TRAINING & ELECTIVES</div>
-
+      <div class="number">01 / TRAINING &amp; ELECTIVES</div>
       <h3>Room to Explore My Interests</h3>
 
-      <p>
-        I love that Wake Forest provides
-        ample elective time to explore
-        different interests. For me, that
-        could mean spending more time
-        on palliative care rotations,
-        exploring Sports Medicine,
-        or getting involved in
-        community organizations.
-      </p>
-
-      <p>
-        I also appreciate that the training
-        prepares residents for so many
-        different paths in family medicine.
-        I want to leave residency with
-        strong, broad training while
-        still having opportunities to
-        figure out what kind of
-        practice fits me best.
-      </p>
-
+      <ul>
+        <li>
+          Ample elective time to explore
+          palliative care, Sports Medicine,
+          and community involvement.
+        </li>
+        <li>
+          Broad training that prepares
+          residents for many different
+          paths in family medicine.
+        </li>
+        <li>
+          The opportunity to figure out
+          what kind of practice fits me best.
+        </li>
+      </ul>
     </div>
 
     <!-- PROCEDURES AND SPORTS MEDICINE -->
 
     <div class="wake-card">
-
       <div class="number">02 / HANDS-ON LEARNING</div>
-
       <h3>Procedures, POCUS &amp; Sports Medicine</h3>
 
-      <p>
-        I'm excited about the opportunities
-        to build my skills in POCUS and
-        procedures. These are areas where
-        I'd really like to grow my
-        confidence during residency.
-      </p>
-
-      <p>
-        I also love the opportunity for
-        Sports Medicine sideline coverage
-        with local high schools. As someone
-        who grew up playing sports and
-        enjoys coaching volleyball,
-        this is something I'd be
-        excited to be part of.
-      </p>
-
+      <ul>
+        <li>
+          Opportunities to build confidence
+          with procedures and point-of-care
+          ultrasound.
+        </li>
+        <li>
+          Sports Medicine sideline coverage
+          with local high schools.
+        </li>
+        <li>
+          As someone who loves sports
+          and coaching volleyball,
+          this is something I'd be
+          excited to be part of!
+        </li>
+      </ul>
     </div>
 
     <!-- COMMUNITY MEDICINE -->
 
     <div class="wake-card">
-
       <div class="number">03 / COMMUNITY</div>
-
       <h3>A Commitment to the Community</h3>
 
-      <p>
-        One of the things I really
-        appreciate about Wake Forest
-        is the commitment to serving
-        the community through its
-        access clinics, mobile clinic,
-        and other community clinics.
-      </p>
-
-      <p>
-        I especially love the community
-        medicine rotation and the
-        opportunity to spend time
-        working with an organization
-        that I'm interested in.
-        I think it's a great way
-        to really get to know the
-        community you're serving.
-      </p>
-
+      <ul>
+        <li>
+          I love Wake Forest's commitment
+          to serving the community through
+          access clinics, mobile clinics,
+          and community clinics.
+        </li>
+        <li>
+          The community medicine rotation
+          is especially exciting to me.
+        </li>
+        <li>
+          I'd love the opportunity to
+          spend time with an organization
+          I'm interested in and really
+          get to know the community
+          I'm serving.
+        </li>
+      </ul>
     </div>
 
     <!-- PEOPLE AND CULTURE -->
 
     <div class="wake-card">
-
       <div class="number">04 / THE PEOPLE</div>
-
       <h3>People I'd Be Excited to Work With</h3>
 
-      <p>
-        I really enjoyed meeting the
-        Wake Forest team at the AAFP
-        FUTURE conference and would
-        be excited to work with them!
-      </p>
-
-      <p>
-        Hunter also interviewed with
-        the Neurology department and
-        really enjoyed everyone he met.
-        One of the Neurology residents
-        even told him, "We love working
-        with Fam Med residents. They
-        usually call us and have
-        everything worked up already!"
-      </p>
-
-      <p>
-        I thought that was such a great
-        compliment and really speaks
-        to the respect between
-        specialties and the quality
-        of the training.
-      </p>
-
+      <ul>
+        <li>
+          I really enjoyed meeting
+          the Wake Forest team at
+          the AAFP FUTURE conference!
+        </li>
+        <li>
+          Hunter interviewed with Neurology
+          and really enjoyed everyone
+          he met in the department.
+        </li>
+        <li>
+          A Neurology resident even told him:
+          "We love working with Fam Med
+          residents. They usually call us
+          and have everything worked
+          up already!"
+        </li>
+        <li>
+          I thought that was such a
+          great compliment and speaks
+          to the respect between
+          specialties and the quality
+          of training.
+        </li>
+      </ul>
     </div>
 
   </div>
@@ -1458,44 +1128,45 @@ footer {
 
   <div class="wake-personal">
 
-    <h3>
-      And of course, life in Winston-Salem!
-    </h3>
+    <h3>And of course, life in Winston-Salem!</h3>
 
-    <p>
-      I've always had family in the South,
-      including in Knoxville, and I spent
-      several years working in the Carolinas.
-      I absolutely loved my time there
-      and would be excited to return.
-    </p>
+    <ul>
+      <li>
+        I've always had family in the South,
+        including Knoxville, and spent
+        several years working in the
+        Carolinas. I absolutely loved
+        my time there!
+      </li>
 
-    <p>
-      Winston-Salem seems like a wonderful
-      place to live. Hunter and I love
-      hiking, being outside, and exploring
-      new places. We like the idea of
-      living somewhere that has the
-      restaurants, activities, and energy
-      of a city without all the
-      big-city hassle.
-    </p>
+      <li>
+        Hunter and I love hiking,
+        being outside, and exploring
+        new places. Winston-Salem seems
+        like a great place for all of that.
+      </li>
 
-    <p>
-      There seem to be plenty of restaurants
-      to try, great hiking nearby and in
-      the mountains, and as baseball fans,
-      we're especially excited about
-      the Winston-Salem Dash!
-    </p>
+      <li>
+        We love the idea of having the
+        restaurants and activities of
+        a city without the big-city hassle.
+      </li>
 
-    <p>
-      Between the training opportunities,
-      the people, and everything the
-      area has to offer, Hunter and
-      I could really see ourselves
-      enjoying life in Winston-Salem.
-    </p>
+      <li>
+        Plenty of hiking nearby and
+        in the mountains, lots of
+        restaurants to try, and
+        the Winston-Salem Dash
+        minor league baseball team!
+      </li>
+
+      <li>
+        Between the training, the people,
+        and everything the area has to
+        offer, Hunter and I could really
+        see ourselves enjoying life here.
+      </li>
+    </ul>
 
   </div>
 
@@ -1509,14 +1180,11 @@ footer {
 <!-- FOOTER -->
 
 <footer>
-
   <p>ANNA GARDNER</p>
-
   <p>
     Made with a little Wisconsin pride
     and a lot of coffee.
   </p>
-
 </footer>
 
 </body>
